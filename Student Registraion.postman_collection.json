@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "fc547d51-c23b-4d64-8f64-59f173131ffa",
+		"name": "Student Registraion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Shubham Upadhyay\",\r\n    \"email\": \"shub@upadhyay.com\",\r\n    \"phone\": 1234567829,\r\n    \"address\": \"Mumbai\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/students"
+			},
+			"response": []
+		},
+		{
+			"name": "Get student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/students"
+			},
+			"response": []
+		},
+		{
+			"name": "Get student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/students/60bc63449436d33a3075bb0"
+			},
+			"response": []
+		},
+		{
+			"name": "Update student",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"shubham@upadhyay.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/students/60bc63449436d33a3075bb06"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://127.0.0.1:8000/students/60bc63449436d33a3075bb06"
+			},
+			"response": []
+		}
+	]
+}
